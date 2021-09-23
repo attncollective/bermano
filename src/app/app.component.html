@@ -1,2 +1,85 @@
+<!-- Navbar-->
+<div> 
+    <mat-toolbar color="primary">
+      <div fxShow="true" fxHide.gt-sm="true">
+        <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon>Menu</mat-icon>
+        </button>
+      </div>
+      
+      <a mat-button class="companyName" routerLink="/">
+        <span>Site name</span>
+      </a>
+      <span class="example-spacer"></span>
+      <div fxShow="true" fxHide.lt-md="true">
+        <a mat-button routerLink="/">Home</a>
+        <a mat-button routerLink="/gallery">Gallery</a>
+        <a mat-button routerLink="/charity">Charity</a>
+        <a mat-button routerLink="/about">About</a>
+        <a mat-button routerLink="/faq">FAQ</a>
+        <a mat-button routerLink="/social">Social</a>
+        <a mat-button routerLink="/contact">Contact</a>
+      </div>
+  
+    </mat-toolbar>
+    <mat-sidenav-container fxFlexFill class="example-container">
+  
+      <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over" opened="false" fxHide.gt-sm="true">
+        <div fxLayout="column">
+        <a mat-button routerLink="/">Home</a>
+        <a mat-button routerLink="/gallery">Gallery</a>
+        <a mat-button routerLink="/charity">Charity</a>
+        <a mat-button routerLink="/about">About</a>
+        <a mat-button routerLink="/faq">FAQ</a>
+        <a mat-button routerLink="/social">Social</a>
+        <a mat-button routerLink="/contact">Contact</a>
+        </div>
+      </mat-sidenav>
+      <mat-sidenav-content fxFlexFill>
+        <router-outlet></router-outlet>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+<section>
 
-<router-outlet></router-outlet>
+    <router-outlet></router-outlet>
+    <br />
+    <br />
+
+    <br />
+    <h1 class="headertext">B E R M A N O</h1>
+    <h1 class="headertext">N F T G A L L E R Y</h1>
+    <br />
+
+    <h3 class="headertext">CONNECT YOUR WALLET TO MINT</h3>
+</section>
+<section>
+    <div class="center">
+        <button mat-icon-button class="perm_identity">
+            <mat-icon>perm_identity</mat-icon>
+        </button>
+        <button mat-icon-button aria-label="home">
+            <mat-icon>home</mat-icon>
+        </button>
+        <button mat-icon-button class="discord">
+            <mat-icon>discord</mat-icon>
+        </button>
+        <button mat-icon-button class="mail">
+            <mat-icon>mail</mat-icon>
+        </button>
+        <button mat-icon-button class="wallet">
+            <mat-icon>account_balance_wallet</mat-icon>
+        </button>
+    </div>
+</section>
+
+<!-- main content container -->
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>
