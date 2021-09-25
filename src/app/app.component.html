@@ -1,45 +1,3 @@
-<!-- Navbar-->
-<div> 
-    <mat-toolbar color="primary">
-      <div fxShow="true" fxHide.gt-sm="true">
-        <button mat-icon-button (click)="sidenav.toggle()">
-          <mat-icon>Menu</mat-icon>
-        </button>
-      </div>
-      
-      <a mat-button class="companyName" routerLink="/">
-        <span>Site name</span>
-      </a>
-      <span class="example-spacer"></span>
-      <div fxShow="true" fxHide.lt-md="true">
-        <a mat-button routerLink="/">Home</a>
-        <a mat-button routerLink="/gallery">Gallery</a>
-        <a mat-button routerLink="/charity">Charity</a>
-        <a mat-button routerLink="/about">About</a>
-        <a mat-button routerLink="/faq">FAQ</a>
-        <a mat-button routerLink="/social">Social</a>
-        <a mat-button routerLink="/contact">Contact</a>
-      </div>
-  
-    </mat-toolbar>
-    <mat-sidenav-container fxFlexFill class="example-container">
-  
-      <mat-sidenav color="primary" #sidenav fxLayout="column" mode="over" opened="false" fxHide.gt-sm="true">
-        <div fxLayout="column">
-        <a mat-button routerLink="/">Home</a>
-        <a mat-button routerLink="/gallery">Gallery</a>
-        <a mat-button routerLink="/charity">Charity</a>
-        <a mat-button routerLink="/about">About</a>
-        <a mat-button routerLink="/faq">FAQ</a>
-        <a mat-button routerLink="/social">Social</a>
-        <a mat-button routerLink="/contact">Contact</a>
-        </div>
-      </mat-sidenav>
-      <mat-sidenav-content fxFlexFill>
-        <router-outlet></router-outlet>
-      </mat-sidenav-content>
-    </mat-sidenav-container>
-  </div>
 <section>
 
     <router-outlet></router-outlet>
@@ -61,14 +19,14 @@
         <button mat-icon-button aria-label="home">
             <mat-icon>home</mat-icon>
         </button>
-        <button mat-icon-button class="discord">
+        <button mat-icon-button class="discord" onclick="window.location.href='https://discord.gg/J3hy45bPfJ'">
             <mat-icon>discord</mat-icon>
         </button>
         <button mat-icon-button class="mail">
             <mat-icon>mail</mat-icon>
         </button>
-        <button mat-icon-button class="wallet">
-            <mat-icon>account_balance_wallet</mat-icon>
+        <button mat-icon-button class="store" onclick="window.location.href='https://discord.gg/J3hy45bPfJ'">
+            <mat-icon>store</mat-icon>
         </button>
     </div>
 </section>
