@@ -11,6 +11,7 @@ import { Footer } from '../components/footer/footer.component';
 import { HomePage } from '../pages/home/home.component'
 import { CollectionsPage } from '../pages/collections/collections.component';
 import { KotjPage } from '../pages/collections/kotj/kotj.component';
+import { GahPage } from 'src/pages/collections/gah/gah.component';
 import { AboutPage } from 'src/pages/about/about.component';
 import { CharityPage } from 'src/pages/charity/charity.component';
 import { FaqPage } from 'src/pages/faq/faq.component';
@@ -24,6 +25,7 @@ import { ButtonsModule } from 'angular-bootstrap-md';
     HomePage,
     CollectionsPage,
     KotjPage,
+    GahPage,
     AboutPage,
     CharityPage,
     FaqPage
