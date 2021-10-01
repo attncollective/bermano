@@ -10,6 +10,9 @@
    sodipodi:docname="soon_owl.svg"
    inkscape:label="BG"
    inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
+   inkscape:export-filename="/home/pirate/Documents/GitHub/attn/bermano/src/assets/images/collections/soon_owl.png"
+   inkscape:export-xdpi="100"
+   inkscape:export-ydpi="100"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +43,7 @@
      showgrid="false"
      inkscape:zoom="0.62199208"
      inkscape:cx="270.0999"
-     inkscape:cy="542.61141"
+     inkscape:cy="541.80754"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="0"
@@ -63,7 +66,7 @@
      inkscape:label="Coming Soon"><tspan
        x="96.966797"
        y="174.86325"
-       id="tspan847">Coming Soon</tspan></text>
+       id="tspan18228">Coming Soon</tspan></text>
   <g
      id="g59383"
      transform="matrix(0.8,0,0,0.8,100,178)"
@@ -106,10 +109,10 @@
   <text
      xml:space="preserve"
      id="text3590"
-     style="font-style:normal;font-weight:normal;font-size:74.6667px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect3592);fill:#f9f9f9;fill-opacity:1;stroke:none"
-     transform="translate(-62.711711,-85.02108)"
+     style="font-style:normal;font-weight:normal;font-size:48px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect3592);fill:#f9f9f9;fill-opacity:1;stroke:none"
+     transform="translate(-63.638672,-85.02108)"
      inkscape:label="Collection"><tspan
        x="96.966797"
-       y="193.73831"
-       id="tspan849">Owl Collection</tspan></text>
+       y="170.14453"
+       id="tspan18230">Give a Hoot Collection</tspan></text>
 </svg>
