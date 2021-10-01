@@ -1,49 +1,42 @@
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app.routing';
+import { MDBBootstrapModule, MdbInput } from 'angular-bootstrap-md';
+import { MdbCheckboxModule } from 'mdb-angular-ui-kit/checkbox';
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/ about.component';
-import { FaqComponent } from './faq/faq.component';
-import { GalleryComponent } from './gallery/gallery.component';
-import { MatButtonModule } from '@angular/material/button';
-import { CharityComponent } from './charity/charity.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatToolbarModule } from '@angular/material/toolbar'; 
-import { MatIconModule } from '@angular/material/icon'
-import { MatCardModule } from '@angular/material/card';
-import { MatDividerModule } from '@angular/material/divider';
-import { MatSidenavModule } from "@angular/material/sidenav";
-import { MatListModule } from "@angular/material/list";
+
+import { Navigation } from '../components/navigation/navigation.component'
+import { Footer } from '../components/footer/footer.component';
+
+import { HomePage } from '../pages/home/home.component'
+import { CollectionsPage } from '../pages/collections/collections.component';
+import { KotjPage } from '../pages/collections/kotj/kotj.component';
+import { AboutPage } from 'src/pages/about/about.component';
+import { CharityPage } from 'src/pages/charity/charity.component';
+import { FaqPage } from 'src/pages/faq/faq.component';
+import { ButtonsModule } from 'angular-bootstrap-md';
 
 @NgModule({
-  imports: [
-    AppRoutingModule,
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatButtonModule,
-    FlexLayoutModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatCardModule,
-    MatDividerModule,
-    MatSidenavModule,
-    MatListModule
-  ],
-
   declarations: [
     AppComponent,
-    HomeComponent,
-    AboutComponent,
-    FaqComponent, 
-    GalleryComponent,
-    CharityComponent
+    Navigation,
+    Footer,
+    HomePage,
+    CollectionsPage,
+    KotjPage,
+    AboutPage,
+    CharityPage,
+    FaqPage
   ],
-
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MDBBootstrapModule.forRoot(),
+    MdbCheckboxModule,
+    ButtonsModule.forRoot()
+  ],
   providers: [],
-
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ NO_ERRORS_SCHEMA ]
 })
-
 export class AppModule { }
