@@ -3,11 +3,26 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon_light.svg" id="faviconTag" />
   <title>bermano</title>
   <base href="/">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
+
+<script>
+  const faviconTag = document.getElementById("faviconTag");
+  const isDark = window.matchMedia("(prefers-color-scheme: dark)");
+  
+  const changeFavicon = () => {
+    if (isDark.matches) faviconTag.href = "./favicon_dark.svg";
+    else faviconTag.href = "./favicon_light.svg";
+  };
+  
+  changeFavicon();
+  
+  setInterval(changeFavicon, 1000);
+   </script>
 
 <body class="mat-typography">
   <app-root></app-root>
